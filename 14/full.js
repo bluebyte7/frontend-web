@@ -1,9 +1,8 @@
-function fullScreen()
-{
+function fullScreen(){
   if (screenfull.enabled) {
-  	screenfull.request();
+  	screenfull.request( document.querySelector('img') );
   }
+
 }
 
-document.getElementById("fullBtn").addEventListener("click", fullScreen);
-\
+document.getElementById('fullBtn').addEventListener('click', fullScreen);
